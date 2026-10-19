@@ -1,0 +1,77 @@
+{
+    "features": [
+        "hr_mean",
+        "hr_std",
+        "hr_min",
+        "hr_max",
+        "eda_mean",
+        "eda_std",
+        "eda_min",
+        "eda_max",
+        "temp_mean",
+        "temp_std",
+        "temp_min",
+        "temp_max",
+        "ibi_mean",
+        "ibi_std",
+        "rmssd",
+        "acc_x_mean",
+        "acc_y_mean",
+        "acc_z_mean",
+        "acc_magnitude_mean",
+        "acc_magnitude_std"
+    ],
+    "input_size": 20,
+    "num_classes": 2,
+    "class_mapping": {
+        "0": "Rest",
+        "1": "Stress"
+    },
+    "target_definition": "Project mapping: self-reported stress score <=3 is Rest; >3 is Stress.",
+    "training_samples": 158,
+    "validation_samples": 53,
+    "testing_samples": 59,
+    "training_subjects": 21,
+    "validation_subjects": 7,
+    "testing_subjects": 8,
+    "best_epoch": 1,
+    "validation_f1": 0.7529411764705882,
+    "accuracy": 0.5932203389830508,
+    "precision": 0.5932203389830508,
+    "recall": 1.0,
+    "f1_score": 0.7446808510638298,
+    "confusion_matrix": [
+        [
+            0,
+            24
+        ],
+        [
+            0,
+            35
+        ]
+    ],
+    "imputation_strategy": "median",
+    "imputation_values": [
+        79.72276044036029,
+        2.9339001901425785,
+        74.24000000000001,
+        86.055,
+        0.9654104296380999,
+        0.15782750908243096,
+        0.652514,
+        1.5827529999999999,
+        32.70107436131387,
+        0.0382001978248964,
+        32.59,
+        32.84,
+        0.7488349780701754,
+        0.0629446814610995,
+        0.0535529362446326,
+        1.6900904605263158,
+        3.6802333824863886,
+        47.21654236694678,
+        63.6746656911036,
+        1.2026354038686704
+    ],
+    "device": "cpu"
+}
